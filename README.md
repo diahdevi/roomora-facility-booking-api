@@ -65,29 +65,29 @@ bookings        — data booking dengan status tracking
 
 | Method | Endpoint                                    | Deskripsi               | Auth |
 | ------ | ------------------------------------------- | ----------------------- | ---- |
-| GET    | `/api/facilities`                         | List fasilitas tersedia | Yes   |
-| GET    | `/api/facilities/{id}`                    | Detail fasilitas        | Yes   |
-| GET    | `/api/facilities/{id}/availability?date=` | Cek jadwal kosong       | Yes   |
+| GET    | `/api/facilities`                         | List fasilitas tersedia | Yes  |
+| GET    | `/api/facilities/{id}`                    | Detail fasilitas        | Yes  |
+| GET    | `/api/facilities/{id}/availability?date=` | Cek jadwal kosong       | Yes  |
 
 ### Bookings (User)
 
 | Method | Endpoint                      | Deskripsi               | Auth |
 | ------ | ----------------------------- | ----------------------- | ---- |
-| POST   | `/api/bookings`             | Buat booking baru       | Yes   |
-| GET    | `/api/my-bookings`          | Riwayat booking sendiri | Yes   |
-| PATCH  | `/api/bookings/{id}/cancel` | Batalkan booking        | Yes   |
+| POST   | `/api/bookings`             | Buat booking baru       | Yes  |
+| GET    | `/api/my-bookings`          | Riwayat booking sendiri | Yes  |
+| PATCH  | `/api/bookings/{id}/cancel` | Batalkan booking        | Yes  |
 
 ### Admin
 
-| Method | Endpoint                             | Deskripsi             | Auth     |
-| ------ | ------------------------------------ | --------------------- | -------- |
-| GET    | `/api/admin/bookings`              | Lihat semua booking   |  Admin |
-| PATCH  | `/api/admin/bookings/{id}/approve` | Approve booking       |  Admin |
-| PATCH  | `/api/admin/bookings/{id}/reject`  | Reject booking        |  Admin |
-| GET    | `/api/admin/facilities`            | Lihat semua fasilitas |  Admin |
-| POST   | `/api/admin/facilities`            | Tambah fasilitas      |  Admin |
-| PUT    | `/api/admin/facilities/{id}`       | Update fasilitas      |  Admin |
-| DELETE | `/api/admin/facilities/{id}`       | Hapus fasilitas       |  Admin |
+| Method | Endpoint                             | Deskripsi             | Auth  |
+| ------ | ------------------------------------ | --------------------- | ----- |
+| GET    | `/api/admin/bookings`              | Lihat semua booking   | Admin |
+| PATCH  | `/api/admin/bookings/{id}/approve` | Approve booking       | Admin |
+| PATCH  | `/api/admin/bookings/{id}/reject`  | Reject booking        | Admin |
+| GET    | `/api/admin/facilities`            | Lihat semua fasilitas | Admin |
+| POST   | `/api/admin/facilities`            | Tambah fasilitas      | Admin |
+| PUT    | `/api/admin/facilities/{id}`       | Update fasilitas      | Admin |
+| DELETE | `/api/admin/facilities/{id}`       | Hapus fasilitas       | Admin |
 
 ---
 
@@ -221,3 +221,11 @@ Run tests:
 
 ```bash
 php artisan test
+```
+
+
+<p align="center">
+  <img src="https://github.com/diahdevi/roomora-facility-booking-api/actions/workflows/laravel-tests.yml/badge.svg" alt="Laravel Tests">
+</p>
+
+
