@@ -30,3 +30,6 @@ Thumbs.db
 /database/database.sqlite
 /database/*.sqlite
 /database/*.sqlite-*
+
+
+/storage/api-docs
