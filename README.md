@@ -212,3 +212,12 @@ Import file koleksi Postman yang tersedia di repository untuk langsung testing s
 ## Lisensi
 
 MIT License — bebas digunakan untuk keperluan belajar dan portfolio.
+
+## Testing
+
+This project includes automated API tests using PHPUnit.
+
+Run tests:
+
+```bash
+php artisan test
